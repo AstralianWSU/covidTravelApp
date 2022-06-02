@@ -1,0 +1,175 @@
+* {box-sizing: border-box;
+
+  }
+  .postimage {
+      float: right;
+  }
+  .logoImage {
+    float: left;
+}
+  .login {
+    margin-right: 2em;
+    margin-left: auto;
+    font-size: x-large;
+    
+}
+  .globalContainer {
+      background-color: #fff;
+
+}
+  body {
+    /*font-family: Helvetica, Arial, sans-serif;*/
+    width: 1200px;
+    background-color: #ccc;
+    /* align-items: center; */
+    margin-left: auto;
+    margin-right: auto;
+    /*font-family: 'Montserrat', 'Nunito', sans-serif;*/
+    font-family: 'Nunito', 'Montserrat', sans-serif;
+    font-size: larger;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    text-align: center;
+    font-size: 35px;
+    
+
+  }
+  header a {
+    text-decoration: none;
+  }
+
+   /* form */
+ .form-layout {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #0000009e;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+ }
+ .order-form {
+    width: 400px;
+    background-color: white;
+    padding: 40px;
+    position: relative;
+ }
+ .order-form label {
+    display: block;
+ }
+ .order-form label input {
+    display: block;
+    width: 100%;
+    margin: 10px 0 15px;
+    font-size: 22px;
+ }
+ .orange-button {
+    border: 0;
+    padding: 10px 30px;
+    background-color: #fc557c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 0 5px 0;  
+    border-radius: 5px;
+ }
+ .button-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 5px 0;
+    padding-top: 20px;
+
+    text-align: center;
+
+ }
+
+ .order-call {
+    border: 1px solid #fc557c;
+    background-color: white;
+    color: #fc557c;
+    padding: 12px 40px;
+    cursor: pointer;
+ }
+ .order-call:hover {
+    background-color: #fc557c;
+    border: 1px solid #fc557c;
+    color: white;
+ }
+/* End of FORM Style */
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: auto;
+    /*height: 300px;*/
+    padding: 20px;
+
+    
+  }
+  /* .active {
+    background-color: #04AA6D;
+  } */
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    width: 200px;
+    padding: 10;
+  }
+
+  #menu-left li{
+    position: relative;
+    padding-left: 1px;
+    margin:0 0 5px 0;
+  }
+  nav li.menu-item:not(:last-child) { 
+    margin-bottom: 3px;  
+ }
+  nav li a:hover {
+    background-color: rgb(5, 88, 121);
+    color: #ccc;
+  }
+  nav a {
+        display: block;
+        padding: 8px;
+        /* background-color: #b6e6f1; */
+        color: black;
+        text-decoration: none;
+  }
+  
+  article {
+    display: inline-block;
+    padding: 20px;
+    width: 80%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+  }
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: right;
+    color: white;
+  }
+   
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
